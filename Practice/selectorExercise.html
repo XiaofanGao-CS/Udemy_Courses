@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selector Exercise</title>
+</head>
+<style type="text/css">
+	 body{
+	 	background: #bdc3c7;
+	 }
+	 h1 {
+	 	color: #9b59b6;
+	 }
+	 h2 {
+	 	color: orange;
+	 }
+	 li {
+	 	color: blue;
+	 }
+	 p {
+	 	background: yellow;
+	 }
+	 input {
+	 	border: 3px solid red
+	 }
+	 .hello{
+	 	background: white;
+	 }
+	 #special{
+	 	border: 2px solid rgb(0,0,100)
+	 }
+	 p {
+	 	font-size: 25px;
+	 }
+	 input[type=text]{
+	 	background: grey;
+	 }
+	div:nth-of-type(3) p {
+ 		background: pink;
+     }
+ /* Give both <p>'s inside the 3rd <div> a pink background*/
+    div:nth-of-type(3) p:nth-of-type(2)  {
+    	border: 5px solid white;
+    }
+/* Give the 2nd <p> inside the 3rd <div> a 5px white border*/
+	div:nth-of-type(3) em {
+		font-size: 20px;
+		color: white;
+	}
+
+/* Make the <em> in the 3rd <div> element white and 20px font(font-size:20px)*/
+
+/*Make all "checked" checkboxes have a left margin of 50px(margin-left: 50px)*/
+	input:checked {
+		margin-left: 50px;
+	}
+
+
+/* Make the <label> elements all UPPERCASE without changing the HTML(definitely look this one up*/
+	lable{
+		text-transform: uppercase;
+	}
+	 #special::first-letter{
+		font-size: 100px;
+		color: green;
+
+	}
+
+/*Make the first letter of the element with id 'special' green and 100px font size(font-size: 100)*/
+
+	h1:hover{
+		background-color: blue;
+	}
+/*Make the <h1> element's color change to blue when hovered over */
+/*Make the <a> element's that have been visited gray */
+	a:visited{
+		color: gray;
+	}
+</style>
+<h1>Selectors Exercise</h1>
+<p>PARAGRAPH NOT INSIDE A DIV</p>
+<p>I am a paragraph with a class</p>
+<p>I am a paragraph with an ID</p>
+<body>
+<h2>I am an awesome h2</h2>
+<div class="hello"><p>Roof party yr hella synth, Wes Anderson narwhal four dollar toast before they sold out retro lo-fi. Austin iPhone pop-up farm-to-table, PBR&B McSweeney's ennui messenger bag distillery before they sold out Portland wolf fanny pack YOLO. Locavore slow-carb trust fund farm-to-table. <em>Pinterest gastropub lo-fi,</em> McSweeney's trust fund VHS shabby chic ugh Austin twee. Messenger bag banjo lumbersexual, whatever 3 wolf moon XOXO normcore. Pug fanny pack 3 wolf moon, typewriter organic chia mustache scenester seitan shabby chic Blue Bottle salvia ugh iPhone. Fanny pack Williamsburg direct trade, cold-pressed disrupt flannel listicle health goth asymmetrical freegan mixtape street art pour-over whatever.</p></div>
+
+<h2>Things I need to do</h2>
+<ul>
+	<div>
+	<li id="special">Walk Dog<span><input type="checkbox"></span></li>
+	<li>Feed Dog<span><input type="checkbox"></span></li>
+	<li>Wash Dog<span><input type="checkbox"></span></li>
+	</div>
+</ul>
+
+<h2>I am another awesome h2</h2>
+<div><p>Cardigan Tumblr mlkshk, fap tilde 3 wolf moon Portland. Heirloom health goth taxidermy blog lo-fi selfies, post-ironic master cleanse fingerstache normcore. Kickstarter plaid twee, bespoke single-origin coffee sustainable lo-fi vinyl Pinterest pork belly cronut skateboard 3 wolf moon. Normcore single-origin coffee salvia, bespoke Austin swag Godard before they sold out kogi disrupt locavore. Lumbersexual Shoreditch Vice, artisan American Apparel master cleanse yr salvia vegan. Bespoke letterpress heirloom kale chips deep v four loko. Lomo sustainable put a bird on it trust fund post-ironic</p>
+<p>I'm the second paragraph inside this div</p></div>
+<p>PARAGRAPH NOT INSIDE A DIV</p>
+
+<h2>A less awesome h2</h2>
+<div><p>Roof party yr hella synth, Wes Anderson narwhal four dollar toast before they sold out retro lo-fi. Austin iPhone pop-up farm-to-table, PBR&B McSweeney's ennui messenger bag distillery before they sold out Portland wolf fanny pack YOLO. Locavore slow-carb trust fund farm-to-table. Pinterest gastropub lo-fi, McSweeney's trust fund VHS shabby chic ugh Austin twee. Messenger bag banjo lumbersexual, whatever 3 wolf moon XOXO normcore. Pug fanny pack 3 wolf moon, typewriter organic chia mustache scenester seitan shabby chic Blue Bottle salvia ugh iPhone. Fanny pack Williamsburg direct trade, cold-pressed disrupt flannel listicle health goth asymmetrical <em>freegan mixtape street art pour-over whatever</em></p>
+
+<p>One last paragraph here!</p></div>
+<a href="https://www.devsprout.io/">I am a link to DevSprout</a>
+<a href="https://news.ycombinator.com/">I am a link to Hacker News</a>
+<div>
+<lable>Name:
+<div><input type="text" placeholder=""></div>
+</lable>
+<lable>Password:
+<div><input type="password" placeholder=" "></div>
+</lable>
+</div>
+
+</body>
+</html>

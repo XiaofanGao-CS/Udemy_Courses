@@ -1,0 +1,16 @@
+h1 {
+	color : rgba(0,100,50,0.4);
+	border: 5px dashed yellow;
+}
+/*width/style/color*/
+li {
+ 	color: green;
+ 		}
+ h4 {
+ 	color: purple;
+ }
+ body{
+ 	background: url(https://vignette.wikia.nocookie.net/joke-battles/images/a/ac/Tree.png/revision/latest?cb=20170827155628);
+ 	/*background-repeat: no-repeat;*/
+ 	background-size: cover;
+ }

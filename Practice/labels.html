@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+	<h1>Register</h1>
+<form>
+<div>
+	<label for="firstName">First Name:</label>
+	<input id=" firstName" type="text" placeholder="First Name">
+	<label for="lastName">Last Name:</label>
+	<input id="lastName" type="text" placeholder="Last Name">
+</div>
+<div>
+	<label for="gender">Male</label>
+	<input id="gender" name="gender" type="radio" value="Male">
+	<label for="gender">Female</label>
+	<input id="gender" name="gender" type="radio" vale="Female">
+	<label for="gender">Others</label>
+	<input id="gender" name="gender" type="radio" value="Others">
+</div>
+ <div>    
+    <label for="Email">Email:</label>
+	<input id="Email" type="Email" placeholder="Email">
+	<label for="password">Password:</label>
+	<input id="password" type="Password" pattern=".{5,10}" required title= "Password must between 5 to 10"placeholder="Password">
+</div>
+<div>
+	<label>Birthday:</label>
+	<select name="Month">
+		<option>Month</option>
+		<OPTION>January</OPTION>
+		<OPTION>Febuary</OPTION>
+		<OPTION>March</OPTION>
+	</select>
+
+	<select name="Date">
+		<option>Date</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+	</select>
+
+	<select name="Year">
+		<option>Year</option>
+		<option>1992</option>
+		<option>1991</option>
+		<option>1990</option>
+	</select>
+</div>
+<p>I agree to the terms and conditions <span><input type="checkbox" required></span></p>
+<button>submit</button>
+
+</form>
+
+</body>
+</html>
